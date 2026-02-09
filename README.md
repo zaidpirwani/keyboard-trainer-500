@@ -1,38 +1,38 @@
 # Keyboard Trainer 500
 
-A typing trainer application for the Raspberry Pi 500 keyboard with RGB LED support.
+Recently got a Pi 500 plus, this is my first mechanical keyboard with RGBs and the best part is, these RGBs I can code via python.
 
-## Overview
+So I thought, why not make a keyboard typing trainer from this. My 2 little ones (6 and 7 years old) were having fun typing short stories on it, but they were having some difficulty finding the right letters. :)
 
-This project uses the Pi 500's programmable RGB LEDs to create an interactive typing training experience. The application lights up keys that need to be pressed and provides visual feedback when incorrect keys are pressed.
+**Main Goal:** Make using a keyboard fun for kids and serve as a physical guide to learn keyboard and ultimately be able to do reasonably fast typing.
 
-## Requirements
+**Main Ingredient:** Pi 500 plus RGB mechanical keyboard  
+**Supporting Components:** Screen, mouse
 
-- Raspberry Pi 500 keyboard
-- Python 3
-- RPiKeyboardConfig library
+## Current Status
 
-## Usage
-
-Run the trainer from a terminal:
-
-```bash
-python3 kb-trainer-v3.py
-```
-
-The program will display a sentence and light up each key that needs to be pressed. If you press the wrong key, nearby keys will blink to help you find the correct one.
-
-## Versions
-
-- `kb-trainer-v-01.py` - Initial version
-- `kb-trainer-v-02.py` - Improved version
-- `kb-trainer-v3.py` - Latest version with neighbor key hints
+For now, this is terminal-based.
 
 ## Resources
 
-- [Raspberry Pi Keyboard Documentation](https://www.raspberrypi.com/documentation/computers/keyboard-computers.html#advanced-led)
-- [Pi Keyboard Config Tool](https://github.com/raspberrypi/rpi-keyboard-config)
+- Documentation: https://www.raspberrypi.com/documentation/computers/keyboard-computers.html#advanced-led
+- Pi keyboard config tool: https://github.com/raspberrypi/rpi-keyboard-config
 
-## License
+## Ideas for Features
 
-See LICENSE file for details. 
+- Light up/blink key which is to be pressed
+- Colorful GUI
+- What to write can be hidden/shown
+- Sounds?
+- Keys should light up based on finger position - every finger has a specific color (red for index, green for ring, and so on)
+- Inverted mode: all light up, required key is blank/off
+- Animations, reactive animations
+- Some more emotion, colors
+- Speed indication via lighting up other keys (number keys, function keys)
+- Usage of modifier keys?
+- Keyboard race: letters appear and user types fast behind the letters
+- Simon Says, but for keyboard
+
+## Note
+
+This is a standalone, one-off project for personal home use. Not thinking about user profiles or saving anything at this stage. 
