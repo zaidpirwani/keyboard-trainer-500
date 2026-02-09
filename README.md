@@ -1,28 +1,38 @@
-Recently got a Pi 500 plus, this is my first mechanical keyboard with RGBs and the best part is, these RGBs I can code via python.
+# Keyboard Trainer 500
 
-So I thought, why not make a keyboard typing trianer from this, my 2 little ones were having fun typing short stories on it, but they were having some difficulty finding the right letters. :)
+A typing trainer application for the Raspberry Pi 500 keyboard with RGB LED support.
 
-Documentation: https://www.raspberrypi.com/documentation/computers/keyboard-computers.html#advanced-led
+## Overview
 
-Pi keyboard config tool: https://github.com/raspberrypi/rpi-keyboard-config
+This project uses the Pi 500's programmable RGB LEDs to create an interactive typing training experience. The application lights up keys that need to be pressed and provides visual feedback when incorrect keys are pressed.
 
-For now, this is terminal
+## Requirements
 
-some ideas
-light up blink key, which is to be pressed
-colorful GUI
-what to write can be hidden / shown
-sounds ?
-keys should light up based on finger position - every finger has a specific color, red for index, green for ring and so on
+- Raspberry Pi 500 keyboard
+- Python 3
+- RPiKeyboardConfig library
 
-inverted mode, all light up, required key is blank/off
+## Usage
 
-animations, reactive animations
-some more emotion, colors
+Run the trainer from a terminal:
 
-speed indication, via lighting up other keys, number, fn keys
-usage of modifier keys ?
+```bash
+python3 kb-trainer-v3.py
+```
 
-keybopard race, letters appear and user types fast behind the letters
+The program will display a sentence and light up each key that needs to be pressed. If you press the wrong key, nearby keys will blink to help you find the correct one.
 
-sam says, but for keyboard 
+## Versions
+
+- `kb-trainer-v-01.py` - Initial version
+- `kb-trainer-v-02.py` - Improved version
+- `kb-trainer-v3.py` - Latest version with neighbor key hints
+
+## Resources
+
+- [Raspberry Pi Keyboard Documentation](https://www.raspberrypi.com/documentation/computers/keyboard-computers.html#advanced-led)
+- [Pi Keyboard Config Tool](https://github.com/raspberrypi/rpi-keyboard-config)
+
+## License
+
+See LICENSE file for details. 
